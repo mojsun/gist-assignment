@@ -1,6 +1,6 @@
-# Regex Tutorial Starter Code
+# Regex Tutorial
 
-# Title (replace with your title)
+# Gist-assignment
 
 Introductory paragraph (replace this with your text)
 
