@@ -1,12 +1,41 @@
 # Regex Tutorial
 
-# Gist-assignment
+# Understanding the Regex Pattern '/^\d{3}-\d{2}-\d{4}$/'
 
-Introductory paragraph (replace this with your text)
+Regular expressions, or regex, are a powerful tool for matching and manipulating text. In this tutorial, we will dive into the search pattern defined by the regex pattern /^\d{3}-\d{2}-\d{4}$/. This pattern is commonly used to validate social security numbers (SSNs) in programming languages.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+The regex pattern /^\d{3}-\d{2}-\d{4}$/ matches a string that represents a valid SSN, where the SSN is a nine-digit number separated by hyphens into three groups of three, two, and four digits respectively.
+Understanding the Components of the Regex Pattern
+
+a. ^ - Start of String Anchor
+
+The ^ symbol at the beginning of the regex pattern indicates that the string must begin with the SSN. It is called the start of string anchor.
+
+b. \d{3} - Match Three Digits
+
+'\d' is a shorthand character class that matches any digit (0-9). The '{3}' quantifier specifies that we want to match exactly three digits. Therefore, '\d{3}' matches any three digits in a row.
+
+c. - - Match Hyphen
+
+The hyphen in the regex pattern is a literal hyphen character that separates the three groups of digits in the SSN.
+
+d. \d{2} - Match Two Digits
+
+Similar to '\d{3}', '\d{2}' matches any two digits in a row.
+
+e. - - Match Hyphen
+
+Another literal hyphen character to separate the second and third groups of digits
+
+f. \d{4} - Match Four Digits
+
+The final group of digits in the SSN is matched by '\d{4}', which matches any four digits in a row.
+
+g. $ - End of String Anchor
+
+The '$' symbol at the end of the regex pattern indicates that the string must end with the SSN. It is called the end of string anchor.
 
 ## Table of Contents
 
